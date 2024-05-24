@@ -4,7 +4,7 @@ vcpkg_from_github(
         OUT_SOURCE_PATH SOURCE_PATH
         REPO Immortals-Robotics/Protos
         REF "v${VERSION}"
-        SHA512 82c73e2d6e9d042778c3ea3f061d9831fd7bab739c52acaa27decf4621b18699b691812cd8223d02620a66e3210e66db5d0c30049dc6255697bb0f7d75069fbb
+        SHA512 6afdcb8f22d00eaf34ae28ece741ff99d7f5b3656104ca9eea42476eac1eaa1003f5042ebcc5575c43b54cc646519364c4f467d9d890216aa90fc17f037bfc9d
         HEAD_REF robocup-2024
 )
 
