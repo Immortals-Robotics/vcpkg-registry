@@ -3,8 +3,8 @@ vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 vcpkg_from_github(
         OUT_SOURCE_PATH SOURCE_PATH
         REPO Immortals-Robotics/Protos
-        REF a3bd29da9de61aeb71d2106319e4b200605dca84
-        SHA512 f46d4dbe1a043360119e31403d32bd453e2265bfd75066e75e311c73ce9df86f7b7274689fd4a65a3afcd3a672d630988ce65b6e369b2a519abd8384be89d261
+        REF "v${VERSION}"
+        SHA512 82c73e2d6e9d042778c3ea3f061d9831fd7bab739c52acaa27decf4621b18699b691812cd8223d02620a66e3210e66db5d0c30049dc6255697bb0f7d75069fbb
         HEAD_REF robocup-2024
 )
 
@@ -13,7 +13,7 @@ vcpkg_cmake_configure(
 )
 
 vcpkg_cmake_install()
-vcpkg_cmake_config_fixup(PACKAGE_NAME "immortals-protos")
+vcpkg_cmake_config_fixup(PACKAGE_NAME "protos")
 
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 
