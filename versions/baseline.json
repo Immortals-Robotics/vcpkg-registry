@@ -1,3 +1,24 @@
 {
-  "default": {}
+  "default": {
+    "homog2d": {
+      "baseline": "2.11.0",
+      "port-version": 0
+    },
+    "imgui": {
+      "baseline": "1.90.6",
+      "port-version": 0
+    },
+    "immortals-common": {
+      "baseline": "0.1.0",
+      "port-version": 0
+    },
+    "rlimgui": {
+      "baseline": "1.0.0",
+      "port-version": 0
+    },
+    "vartypes": {
+      "baseline": "0.9.0",
+      "port-version": 0
+    }
+  }
 }
