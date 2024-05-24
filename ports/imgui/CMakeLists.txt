@@ -8,14 +8,14 @@ if(APPLE)
     enable_language(OBJCXX)
 endif()
 
-add_compile_options($<$<OR:$<BOOL:${ENABLE_SANITIZERS}>,$<CONFIG:Debug>>:-fsanitize=address>)
+# Enable ASAN
+add_compile_options($<$<BOOL:${ENABLE_SANITIZERS}>>:-fsanitize=address>)
+add_link_options($<$<BOOL:${ENABLE_SANITIZERS}>>:-fsanitize=address>)
 
 # undefined behavior sanitizer is not available on MSVC
 if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-    add_compile_options("$<$<OR:$<BOOL:${ENABLE_SANITIZERS}>,$<CONFIG:Debug>>:-fno-omit-frame-pointer;-fsanitize=undefined>")
-    add_link_options("$<$<OR:$<BOOL:${ENABLE_SANITIZERS}>,$<CONFIG:Debug>>:-fno-omit-frame-pointer;-fsanitize=undefined>")
-
-    add_link_options($<$<OR:$<BOOL:${ENABLE_SANITIZERS}>,$<CONFIG:Debug>>:-fsanitize=address>)
+    add_compile_options("$<$<BOOL:${ENABLE_SANITIZERS}>>:-fno-omit-frame-pointer;-fsanitize=undefined>")
+    add_link_options("$<$<BOOL:${ENABLE_SANITIZERS}>>:-fno-omit-frame-pointer;-fsanitize=undefined>")
 endif ()
 
 add_library(${PROJECT_NAME} "")
