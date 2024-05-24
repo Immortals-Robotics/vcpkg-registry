@@ -1,2 +1,2 @@
-# vcpkg-ports
-Immortals custom vcpkg overlay ports.
+# vcpkg-registry
+Immortals custom vcpkg registry.
