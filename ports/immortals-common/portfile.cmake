@@ -1,22 +1,22 @@
 vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 
 vcpkg_from_github(
-        OUT_SOURCE_PATH SOURCE_PATH
-        REPO Immortals-Robotics/Common
-        REF 8e3654d2ceec08290e6e71eb69da37cce6280d8d
-        SHA512 74b459c4c23fc71720c3c1d1e27e45d3329c613e39f765bf8b7b10efe51933500f524854d35d9782760d15653c311f823ef7a8180f27c0ad02b80550758844e8
-        HEAD_REF main
+    OUT_SOURCE_PATH SOURCE_PATH
+    REPO Immortals-Robotics/Common
+    REF "v${VERSION}"
+    SHA512 f46a29184653e9b4d67a1b0fe2a231cce2aec53ea1d01ac79706a4d8b937a363b884cc24351be0952903cbf2ea0ac983edb2b01dd0c8dac700e26dc016b9ef10
+    HEAD_REF main
 )
 
 vcpkg_cmake_configure(
-        SOURCE_PATH "${SOURCE_PATH}"
+    SOURCE_PATH "${SOURCE_PATH}"
+    OPTIONS_DEBUG
+        -DENABLE_SANITIZERS=ON
 )
 
 vcpkg_cmake_install()
-
-vcpkg_cmake_config_fixup(PACKAGE_NAME "immortals-common")
+vcpkg_cmake_config_fixup()
 
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 
-file(INSTALL "${SOURCE_PATH}/LICENSE" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright)
-configure_file("${CMAKE_CURRENT_LIST_DIR}/usage" "${CURRENT_PACKAGES_DIR}/share/${PORT}/usage" COPYONLY)
+vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE")
