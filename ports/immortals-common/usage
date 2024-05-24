@@ -1,0 +1,4 @@
+immortals-common provides CMake targets:
+
+find_package(immortals-common CONFIG REQUIRED)
+target_link_libraries(main PRIVATE immortals::common)
