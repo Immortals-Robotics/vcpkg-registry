@@ -12,6 +12,10 @@
       "baseline": "0.1.0",
       "port-version": 0
     },
+    "immortals-protos": {
+      "baseline": "0.1.0",
+      "port-version": 0
+    },
     "rlimgui": {
       "baseline": "1.0.0",
       "port-version": 0
