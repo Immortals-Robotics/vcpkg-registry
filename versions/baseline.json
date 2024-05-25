@@ -20,6 +20,10 @@
       "baseline": "1.0.0",
       "port-version": 0
     },
+    "tmc-api": {
+      "baseline": "3.0.8",
+      "port-version": 0
+    },
     "vartypes": {
       "baseline": "0.9.0",
       "port-version": 0
