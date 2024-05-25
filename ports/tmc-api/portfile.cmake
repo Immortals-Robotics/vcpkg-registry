@@ -3,8 +3,8 @@ vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO analogdevicesinc/TMC-API
-    REF aeec3a7af654a34ccdc260f02254f7f500d4ff5a
-    SHA512 6f11d1d5c74783811e1f5be40e8604bcea00ef7f593df745a6dffea0d4e9aa3bbc241d8e0aa03bce83c6c36ddf1fe376942a7e3392bd1d8d493abaa017cbb183
+    REF e77feedec84f78ccdcce5dd9963f65d37968decb
+    SHA512 50bc66f4da5cc30d4f7459a8bf739a9fab2d062462336c1cf2d8161073e0cea107146458f64ad27a3f9d41568211246df6423eb2a33382f5c2d6c1a8d2a72484
     HEAD_REF master
 )
 
