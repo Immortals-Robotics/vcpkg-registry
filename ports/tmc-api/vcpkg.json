@@ -1,0 +1,25 @@
+{
+  "name": "tmc-api",
+  "version": "3.0.8",
+  "description": "TRINAMIC's IC API",
+  "homepage": "https://github.com/analogdevicesinc/TMC-API",
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ],
+  "features": {
+    "tmc-4671": {
+      "description": "TMC4671 IC"
+    },
+    "tmc-6200": {
+      "description": "TMC6200 IC"
+    }
+  }
+}
