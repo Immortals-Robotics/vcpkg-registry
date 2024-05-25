@@ -63,6 +63,7 @@ vcpkg_cmake_configure(
         ${FEATURE_OPTIONS}
     OPTIONS_DEBUG
         -DIMGUI_SKIP_HEADERS=ON
+        -DENABLE_SANITIZERS=ON
 )
 
 vcpkg_cmake_install()
