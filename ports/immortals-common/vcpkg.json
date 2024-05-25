@@ -20,32 +20,20 @@
     }
   ],
   "default-features": [
-    "logging",
-    "config-file"
+    "config-file",
+    "logging"
   ],
   "features": {
-    "udp": {
-      "description": "UDP socket library based on asio",
+    "config-file": {
+      "description": "Config file implementation based on tomlplusplus",
       "dependencies": [
-        "asio"
+        "tomlplusplus"
       ]
     },
-    "nng": {
-      "description": "NNG socket implementation",
+    "debug": {
+      "description": "Debug draw and log implementation using NNG and xxhash",
       "dependencies": [
-        "nng"
-      ]
-    },
-    "storage": {
-      "description": "Storage implementation based on lmdb",
-      "dependencies": [
-        "lmdb"
-      ]
-    },
-    "raylib": {
-      "description": "Base types interop with raylib types",
-      "dependencies": [
-        "raylib"
+        "xxhash"
       ]
     },
     "imgui": {
@@ -65,16 +53,28 @@
         "spdlog"
       ]
     },
-    "config-file": {
-      "description": "Config file implementation based on tomlplusplus",
+    "nng": {
+      "description": "NNG socket implementation",
       "dependencies": [
-        "tomlplusplus"
+        "nng"
       ]
     },
-    "debug": {
-      "description": "Debug draw and log implementation using NNG and xxhash",
+    "raylib": {
+      "description": "Base types interop with raylib types",
       "dependencies": [
-        "xxhash"
+        "raylib"
+      ]
+    },
+    "storage": {
+      "description": "Storage implementation based on lmdb",
+      "dependencies": [
+        "lmdb"
+      ]
+    },
+    "udp": {
+      "description": "UDP socket library based on asio",
+      "dependencies": [
+        "asio"
       ]
     }
   }
