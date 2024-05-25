@@ -21,7 +21,7 @@
       "port-version": 0
     },
     "tmc-api": {
-      "baseline": "3.0.8",
+      "baseline": "3.10.1",
       "port-version": 0
     },
     "vartypes": {
