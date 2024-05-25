@@ -1,23 +1,11 @@
 {
   "name": "immortals-common",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Immortal's common C++ code used in different projects",
   "homepage": "https://github.com/Immortals-Robotics/Common",
   "license": "GPL-3.0-only",
   "dependencies": [
-    "asio",
-    {
-      "name": "imgui",
-      "features": [
-        "docking-experimental"
-      ]
-    },
     "immortals-protos",
-    "lmdb",
-    "nng",
-    "raylib",
-    "spdlog",
-    "tomlplusplus",
     {
       "name": "vcpkg-cmake",
       "host": true
@@ -29,7 +17,65 @@
     {
       "name": "vcpkg-pkgconfig-get-modules",
       "host": true
+    }
+  ],
+  "default-features": [
+    "logging",
+    "config-file"
+  ],
+  "features": {
+    "udp": {
+      "description": "UDP socket library based on asio",
+      "dependencies": [
+        "asio"
+      ]
     },
-    "xxhash"
-  ]
+    "nng": {
+      "description": "NNG socket implementation",
+      "dependencies": [
+        "nng"
+      ]
+    },
+    "storage": {
+      "description": "Storage implementation based on lmdb",
+      "dependencies": [
+        "lmdb"
+      ]
+    },
+    "raylib": {
+      "description": "Base types interop with raylib types",
+      "dependencies": [
+        "raylib"
+      ]
+    },
+    "imgui": {
+      "description": "Base types interop with dear imgui types",
+      "dependencies": [
+        {
+          "name": "imgui",
+          "features": [
+            "docking-experimental"
+          ]
+        }
+      ]
+    },
+    "logging": {
+      "description": "Logging implementation based on spdlog",
+      "dependencies": [
+        "spdlog"
+      ]
+    },
+    "config-file": {
+      "description": "Config file implementation based on tomlplusplus",
+      "dependencies": [
+        "tomlplusplus"
+      ]
+    },
+    "debug": {
+      "description": "Debug draw and log implementation using NNG and xxhash",
+      "dependencies": [
+        "xxhash"
+      ]
+    }
+  }
 }

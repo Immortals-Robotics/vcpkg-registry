@@ -4,12 +4,25 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Immortals-Robotics/Common
     REF "v${VERSION}"
-    SHA512 54702512bb0d6c182708d3e3d892f4f555eebf823635955f80e6582a8e6b513672f5e78301e715a4ee3e4d83c6c56f25651d646f249dcb9765a1f956a782ab46
+    SHA512 24e7af9de508570b63b73dfe1f12ad662c98d36305494119a1150bbb47a2eb0990dbbe7e71914098b21d356d6e8f7e37db6b4600d18019bfce7021020b194d5d
     HEAD_REF main
 )
 
+vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
+    FEATURES 
+    udp         FEATURE_UDP
+    nng         FEATURE_NNG
+    storage     FEATURE_STORAGE
+    raylib      FEATURE_RAYLIB
+    imgui       FEATURE_IMGUI
+    logging     FEATURE_LOGGING
+    config-file FEATURE_CONFIG_FILE
+    debug       FEATURE_DEBUG)
+
 vcpkg_cmake_configure(
     SOURCE_PATH "${SOURCE_PATH}"
+    OPTIONS
+        ${FEATURE_OPTIONS}
     OPTIONS_DEBUG
         -DENABLE_SANITIZERS=ON
 )
