@@ -4,6 +4,10 @@
       "baseline": "2.11.0",
       "port-version": 0
     },
+    "icm-42688": {
+      "baseline": "0.1.0",
+      "port-version": 0
+    },
     "imgui": {
       "baseline": "1.90.6",
       "port-version": 0
