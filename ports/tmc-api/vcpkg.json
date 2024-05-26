@@ -1,6 +1,6 @@
 {
   "name": "tmc-api",
-  "version": "3.10.1-imm.3",
+  "version": "3.10.1-imm.4",
   "description": "TRINAMIC's IC API",
   "homepage": "https://github.com/analogdevicesinc/TMC-API",
   "license": "MIT",
