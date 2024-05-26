@@ -3,6 +3,7 @@ Immortals custom vcpkg registry.
 
 ## Ports
 - homog2d
+- icm-42688
 - imgui
 - immortals-protos
 - immortals-common
@@ -19,6 +20,7 @@ Add this to your **vcpkg-configuration.json**'s [registries](https://learn.micro
   "baseline": "3ad0e33575e0d60d277958e141e980b766b1cf61",
   "packages": [
     "homog2d",
+    "icm-42688",
     "imgui",
     "immortals-protos",
     "immortals-common",
@@ -33,7 +35,7 @@ Add this to your **vcpkg-configuration.json**'s [registries](https://learn.micro
 Follow the guide [here](https://learn.microsoft.com/en-us/vcpkg/produce/publish-to-a-git-registry). TLDR:
 
 ### Add the port
-Add your new port to the **ports** folder.
+Add your new port to the **ports** folder and commit it.
 
 ### Update the versions database
 Use this command in repo's root folder:

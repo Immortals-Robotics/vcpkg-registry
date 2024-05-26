@@ -1,0 +1,31 @@
+{
+  "name": "icm-42688",
+  "version": "0.1.0",
+  "description": "Hardware agnostic library for communicating with the InvenSense ICM42688 nine-axis IMUs.",
+  "homepage": "https://github.com/Immortals-Robotics/ICM42688",
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ],
+  "default-features": [
+    "spi"
+  ],
+  "features": {
+    "fifo": {
+      "description": "Device fifo"
+    },
+    "i2c": {
+      "description": "I2C bus"
+    },
+    "spi": {
+      "description": "SPI bus"
+    }
+  }
+}
