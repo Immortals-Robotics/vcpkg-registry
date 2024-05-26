@@ -1,6 +1,6 @@
 {
   "name": "tmc-api",
-  "version": "3.10.1",
+  "version": "3.10.1-imm.2",
   "description": "TRINAMIC's IC API",
   "homepage": "https://github.com/analogdevicesinc/TMC-API",
   "license": "MIT",
@@ -14,7 +14,13 @@
       "host": true
     }
   ],
+  "default-features": [
+    "spi-array-transfer"
+  ],
   "features": {
+    "spi-array-transfer": {
+      "description": "Use array SPI transfers"
+    },
     "tmc-4671": {
       "description": "TMC4671 IC"
     },
