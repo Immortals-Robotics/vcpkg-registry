@@ -4,7 +4,7 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Immortals-Robotics/Common
     REF "v${VERSION}"
-    SHA512 6bce1dfa1b63312094da0764b9dd8f9dfd4285ebde2576bd19397247193ec6fd2c307e29f178760a995f3d7c8e759174bd8a7d3cd7ec112133a5465ee770ead7
+    SHA512 bdea4d28e5ba9c55256b093df2b2b7ce78fcd3cbc6e128371d5fbebc98ac9f5531ada15420adaa24c293e33336c4892d57ef2030a90a1f65a8ed79fc3ec0b2ec
     HEAD_REF main
 )
 
