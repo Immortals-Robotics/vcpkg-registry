@@ -1,6 +1,6 @@
 {
   "name": "immortals-common",
-  "version": "0.2.12",
+  "version": "0.2.13",
   "description": "Immortal's common C++ code used in different projects",
   "homepage": "https://github.com/Immortals-Robotics/Common",
   "license": "GPL-3.0-only",
