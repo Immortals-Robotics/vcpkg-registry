@@ -1,6 +1,6 @@
 {
   "name": "kalman",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": " Header-only C++11 Kalman Filtering Library (EKF, UKF) based on Eigen3 ",
   "homepage": "https://github.com/mherb/kalman",
   "dependencies": [
