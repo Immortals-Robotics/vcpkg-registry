@@ -4,6 +4,7 @@
   "description": " Header-only C++11 Kalman Filtering Library (EKF, UKF) based on Eigen3 ",
   "homepage": "https://github.com/mherb/kalman",
   "dependencies": [
+    "eigen3",
     {
       "name": "vcpkg-cmake",
       "host": true
@@ -11,7 +12,6 @@
     {
       "name": "vcpkg-cmake-config",
       "host": true
-    },
-    "eigen3"
+    }
   ]
 }
