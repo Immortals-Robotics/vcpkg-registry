@@ -20,6 +20,10 @@
       "baseline": "0.1.12",
       "port-version": 0
     },
+    "kalman": {
+      "baseline": "1.0.0",
+      "port-version": 0
+    },
     "rlimgui": {
       "baseline": "1.0.0",
       "port-version": 0
