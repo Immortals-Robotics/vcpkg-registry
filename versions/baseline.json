@@ -17,7 +17,7 @@
       "port-version": 0
     },
     "immortals-protos": {
-      "baseline": "0.1.12",
+      "baseline": "0.1.13",
       "port-version": 0
     },
     "kalman": {
